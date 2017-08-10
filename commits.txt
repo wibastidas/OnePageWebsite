@@ -1,0 +1,11 @@
+commit e4178889e0b97bd38eb862dd4b6dadaacab8a710
+Author: William <wibastidas77@gmail.com>
+Date:   Wed Aug 9 21:11:54 2017 -0300
+
+    Agrege un espacio para probar git en el index.haml
+
+commit 3d543a5c0303865d794d5f781744c3cba178fff4
+Author: William <wibastidas77@gmail.com>
+Date:   Wed Aug 9 21:07:54 2017 -0300
+
+    Primera version sin manifest
