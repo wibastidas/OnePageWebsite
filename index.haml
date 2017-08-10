@@ -1,0 +1,136 @@
+-gallery_images = ["club-sandwich.jpg","papas.jpg","hamburger.jpg","panini.jpg","club-sandwich.jpg","papas.jpg"]
+!!!5
+%html{class:"no-js", lang:"es"}
+	%head 
+		%meta{charset:"utf-8"}
+		%title Búfon taller gourmet
+		%meta{name:"description", content:"Come rico y barato en el mejor lugar de comida internacional de la ciudad. Los mejores tacos, chivitos, arepas, ensaladas y hamburguesas."}
+		%link{rel:"stylesheet", href:"css/normalize.css"}
+		%link{rel:"stylesheet", href:"css/bootstrap.css"}
+		%link{rel:"stylesheet", href:"https://cdn.jsdelivr.net/flexboxgrid/6.3.2/flexboxgrid.min.css"}
+		%link{rel:"stylesheet", href:"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"}
+		%link{rel:"stylesheet", href:"css/style.css"}
+		%link{rel:"stylesheet", href:"https://fonts.googleapis.com/css?family=Dancing+Script"}
+		%meta{name:"viewport", content:"width=device-width, initial-scale=1"}
+		%meta{:"data-name" => "image-counter", content:"#{gallery_images.size - 1}"}
+		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
+	%body
+		="<!--[if lt IE 8]>"
+		%p{class:"browserupgrade"}
+			Estás usando un navegador
+			%strong desactualizado.
+			Por favor
+			%a{href:"http://browsehappy.com/"}
+				actualiza tu navegador
+				para una mejor experiencia
+		="<![endif]-->"
+		.video-container
+			%video{autoplay:true, loop:true, width:"1280", height:"720", poster:"/videos/images/Out-Camping.jpg",loop:true}
+				%source{src:"/videos/mp4/Out-Camping.mp4", type:"video/mp4"}
+				%source{src:"/videos/webm/Out-Camping.webm", type:"video/webm"}
+		.row.full-height.middle-xs.center-xs.relative.up#home
+			.col-xs-12
+				%box.white-text
+					%img{src:"imgs/logo.png", width:"200"}
+					%h1.dancing-script.title.no-margin Búfon taller gourmet
+					%p#is-open 
+						%i.glyphicon.glyphicon-time
+						%span.text Abierto ahora
+			%nav.fixed.top.right.navigation.white-text#navigation
+				-menu = [{title: "Inicio", link:"#home"},{title: "Menú", link:"#menu"},{title: "Galería", link:"#gallery"},{title: "Contacto", link:"#contact"},{title: "Cómo llegar", link:"#location"}]
+				%ul.list-inline
+					-menu.each do |item|
+						%li 
+							%a.menu-link{href:item[:link]}= item[:title]
+			.absolute.black.large-padding.white-text.full-width#description
+				.row.middle-xs.center-xs
+					.col-xs-7.col-sm-6.white-text.medium
+						Comida internacional
+					.col-xs.hidden#sticky-navigation
+						.box
+							%nav.text-right.navigation#responsive-nav
+								%i.glyphicon.glyphicon-menu-hamburger.white-text.subtitle.glyphicon-remove#menu-opened
+								%ul.list-inline
+									-menu.each do |item|
+										%li
+											%a.menu-link{href:item[:link]}= item[:title]
+		.text-center.relative#menu
+			.absolute.white#menu-title
+				%h2.dancing-script.title Menú
+			-menu_photos = [{title: "Club Sandwich", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "10.00",image:"club-sandwich"},{title: "Combo hamburguesa",description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "50.00",image:"combo"},{title: "Hamburguesa",description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "20.00",image:"hamburger"},{title: "Hot cakes", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.",pricing: "30.00",image:"hot-cakes"},{title: "Panini", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "15.00",image:"panini"},{title: "Papas", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.",pricing: "10.00",image:"papas"},{title: "Club Sandwich",description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "10.00",image:"club-sandwich"},{title: "Hamburguesa", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "20.00",image:"hamburger"}]
+			.row
+				-menu_photos.each do |photo|
+					.col-md-4.col-lg-3.col-sm-6.col-xs-12.food{style:"background-image:url(/imgs/food/#{photo[:image]}-thumb.jpg)"}
+						.screen
+							.row.middle-xs.full-height
+								.col-xs-12.white-text
+									%h3.dancing-script.subtitule= photo[:title]
+									%p.no-margin= photo[:description]
+									%p.no-margin= photo[:pricing] + "$"
+		#gallery
+			.inner
+				-gallery_images.each do |image|
+					.image{style:"background-image:url(/imgs/food/#{image});"}
+		.container
+			.card.white.black-text.text-center.relative
+				%h3.medium.slim
+					En
+					%strong.dancing-script.medium Búfon taller gourmet
+					cocinar no es una profesión, no es una técnica, es un 
+					%strong.dancing-script.medium arte
+				%p.top-space
+					You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed. The key to more success is to get a massage once a week, very important, major key, cloth talk. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. 
+					%strong.dancing-script.medium Coco - Chef
+					.large-padding.medium.black.white-text.text-center
+						También puedes acceder a este sitio sin conexión a internet. 
+
+		.black.white-text.full-height#contact
+			.row.middle-xs.full-height
+				.col-xs-12
+					.box
+					%br
+						%p.text-center.medium#info-contacto Presiona enter para llenar el campo correspondiente y  enviarnos un correo. &hearts;
+
+						%form{action:"https://formspree.io/wibastidas77@gmail.com",method:"POST",id:"contact-form",class:"step-form"}
+							
+							.row.center-xs
+								.col-xs-12.col-sm-2.col-md-1.first-sm
+									.box
+										-3.times do |i|
+											-if i ==0
+												.path-step.active
+											-else
+												.path-step
+								.col-xs-12.col-sm-3.first-xs
+									.box
+										%fieldset.step.active
+											%input{type:"email", name:"email", placeholder:"Tu Correo electrónico",class:"input",required:true}
+										%fieldset.step
+											%input{type:"text", name:"name", placeholder:"Tu Nombre",class:"input",required:true}
+										%fieldset.step
+											%textarea{name:"comments", placeholder:"Tu Mensaje",class:"input",required:true}
+										%br
+										%br
+										%br
+										%button.button-send{type: "submit", name: "submission" } Enviar
+				
+		#location
+			#map
+			#message.black.large-padding.white-text.text-center.medium
+	%footer.text-align-center
+		%strong.dancing-script.medium
+		%a{href:"https://www.facebook.com/bufonresto/",style: "color: #333333"}
+			%i.fa.fa-facebook-square
+		%a{href:"https://www.facebook.com/bufonresto/",style: "color: #333333"}
+			%i.fa.fa-twitter 
+		%a{href:"https://www.facebook.com/bufonresto/",style: "color: #333333"}
+			%i.fa.fa-instagram  
+		%a{href:"https://www.facebook.com/bufonresto/",style: "color: #333333"}
+			%i.fa.fa-youtube
+
+		%script{type:"text/javascript", src:"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"}
+		%script
+			window.jQuery || document.write("<script src='/js/vendor/jquery-1.12.0.min.js'><\/script>")
+		%script{src:"https://maps.googleapis.com/maps/api/js?key=AIzaSyCr7CvMcq__tVlvd8bP6q8Gk05bZfTvBNY"}
+		%script{src:"/dist/app.js"}
+		
