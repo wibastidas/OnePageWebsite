@@ -1,4 +1,4 @@
--gallery_images = ["club-sandwich.jpg","papas.jpg","hamburger.jpg","panini.jpg","club-sandwich.jpg","papas.jpg"]
+-gallery_images = ["bu1.jpg", "arepas-thumb.jpg","bu2.jpg","empa-thumb.jpg"]
 !!!5
 %html{class:"no-js", lang:"es"}
 	%head 
@@ -11,6 +11,7 @@
 		%link{rel:"stylesheet", href:"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"}
 		%link{rel:"stylesheet", href:"css/style.css"}
 		%link{rel:"stylesheet", href:"https://fonts.googleapis.com/css?family=Dancing+Script"}
+		%link{rel:"manifest", href:"manifest.json"}
 		%meta{name:"viewport", content:"width=device-width, initial-scale=1"}
 		%meta{:"data-name" => "image-counter", content:"#{gallery_images.size - 1}"}
 		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
@@ -57,7 +58,7 @@
 		.text-center.relative#menu
 			.absolute.white#menu-title
 				%h2.dancing-script.title Menú
-			-menu_photos = [{title: "Club Sandwich", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "10.00",image:"club-sandwich"},{title: "Combo hamburguesa",description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "50.00",image:"combo"},{title: "Hamburguesa",description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "20.00",image:"hamburger"},{title: "Hot cakes", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.",pricing: "30.00",image:"hot-cakes"},{title: "Panini", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "15.00",image:"panini"},{title: "Papas", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.",pricing: "10.00",image:"papas"},{title: "Club Sandwich",description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "10.00",image:"club-sandwich"},{title: "Hamburguesa", description: "Rellena de tres quesos, tomates asados y huevos revueltos. Libre de gluten.", pricing: "20.00",image:"hamburger"}]
+			-menu_photos = [{title: "Degustación de Arepas", description: "5 miniarepas con nuestros rellenos más clásicos; carne y queso, pollo y palta,chorizos y morrones, champiñones a la crema y tomates a la miel.", pricing: "290",image:"arepas"},{title: "Bandeja Paisa",description: "Plato emblemático Colombiano tiene arroz, frijoles, palta, chorizo, chicharrón, carne, arepa y plátano macho.", pricing: "350",image:"bandeja"},{title: "Arroz con Pollo",description: "Plato festivo, arroz amarillo salteado con pollo desmechado y vegetales acompañado de papa frita ensalada y patacones.", pricing: "290",image:"arr"},{title: "Picada Cervecera", description: "Ideal para compartir; tiene arepitas fritas patacones, bondiola laqueada, chorizos, pollo picante julianas de carne y nuestro triolet de salsas.",pricing: "500",image:"picxada"},{title: "Empanadas de Maíz", description: "Empanaditas hechas con harina de maíz rellenas de carne desmechada o pollo desmechado y pure de papas, acompañados con nuetro ají nivel 1,2,3.", pricing: "50",image:"empa"},{title: "Cazuela de Mariscos", description: "Nuestra cuota caribeña, es una cazuela hecha con mariscos y pescado fresco en una salsa cremosa acompañado de arroz con coco y patacones.",pricing: "390",image:"caz"},{title: "Chiviarepa Canadiense",description: "Fusión Uruguaya; es un chivito de lomo, panceta, muzarela, lechuga, tomate, aceitunas, mayonesa y huevo frito, remplazamos el pan tortuga por una suculenta arepa.", pricing: "240",image:"ch"},{title: "Daiquiri", description: "Coctelería con influencia del caribe, usamos frutas tropicales para elaborar nuestros tragos destacando nuestros daiquiri mango, fresa, piña, kiwi, papaya, durazno entre otros.", pricing: "180",image:"dai"}]
 			.row
 				-menu_photos.each do |photo|
 					.col-md-4.col-lg-3.col-sm-6.col-xs-12.food{style:"background-image:url(/imgs/food/#{photo[:image]}-thumb.jpg)"}
@@ -79,8 +80,8 @@
 					cocinar no es una profesión, no es una técnica, es un 
 					%strong.dancing-script.medium arte
 				%p.top-space
-					You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed. The key to more success is to get a massage once a week, very important, major key, cloth talk. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. 
-					%strong.dancing-script.medium Coco - Chef
+					El Búfon es un resto bar con influencia caribeña trayendo los sabores del norte al uruguay, elaboramos nuestros platos tradicionalmente desde cero, usando ingredientes frescos y trayendo una nueva tendencia.
+					%strong.dancing-script.medium Bufón Taller gourmet
 					.large-padding.medium.black.white-text.text-center
 						También puedes acceder a este sitio sin conexión a internet. 
 
@@ -123,10 +124,10 @@
 			%i.fa.fa-facebook-square
 		%a{href:"https://www.facebook.com/bufonresto/",style: "color: #333333"}
 			%i.fa.fa-twitter 
-		%a{href:"https://www.facebook.com/bufonresto/",style: "color: #333333"}
+		%a{href:"https://www.instagram.com/andreitagourmet/",style: "color: #333333"}
 			%i.fa.fa-instagram  
-		%a{href:"https://www.facebook.com/bufonresto/",style: "color: #333333"}
-			%i.fa.fa-youtube
+		/%a{href:"https://www.instagram.com/andreitagourmet/",style: "color: #333333"}
+		/	%i.fa.fa-youtube
 
 		%script{type:"text/javascript", src:"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"}
 		%script

@@ -1,0 +1,13 @@
+{
+  "name": "Búfon",
+  "short_name": "Búfon",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "imgs/appicon.jpg",
+    "sizes": "512x512",
+    "type": "image/jpg"
+  }],
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}
