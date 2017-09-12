@@ -12,6 +12,14 @@
 
 ![Screenshot Maps](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshot5.png)
 
+![Screenshot Maps](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshotMobile1.png)
+![Screenshot Maps](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshotMobile2.png)
+![Screenshot Maps](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshotMobile3.png)
+![Screenshot Maps](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshotMobile4.png)
+![Screenshot Maps](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshotMobile5.png)
+![Screenshot Maps](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshotMobile6.png)
+
+
 [http://bufonrestaurant.com/](http://bufonrestaurant.com/)
 
 
