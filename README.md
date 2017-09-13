@@ -2,7 +2,7 @@
 
 ## *OnePage Website Restaurant - Diseño Web Frontend*
 
-**Características del sitio**
+**Características del sitio:**
 
 Proyecto de página web con tecnologías web frontend, enfocado en un restaurant.
 
