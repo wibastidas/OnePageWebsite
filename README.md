@@ -6,7 +6,7 @@
 
 Proyecto de página web con tecnologías web frontend, enfocado en un restaurant.
 
-El inicio tiene un video cover en en background y print scream del video que se muestra mientras carga el mismo.
+El [inicio](#inicio) tiene un video cover en en background y print scream del video que se muestra mientras carga el mismo.
 
 Utilizando javascript se muetsra en el inicio si el restaurant esta abierto o cerrado según el horario.  
 
@@ -24,6 +24,7 @@ Un step form de contacto sin código en el backend para el envío de un email. (
 
 Mapa con marcador de la ubicación del restaurant y geolocalización para identificar a que distancia esta el usuario del restaurant.
 
+#inicio
 ![Screenshot Inicio](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshot1.png)
 
 ![Screenshot Menú](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshot2.png)
