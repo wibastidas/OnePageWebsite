@@ -6,7 +6,7 @@
 
 Proyecto de página web con tecnologías web frontend, enfocado en un restaurant.
 
-- El [inicio](#Inicio) tiene un video cover en en background y print scream del video que se muestra mientras carga el mismo.
+- El inicio tiene un video cover en en background y print scream del video que se muestra mientras carga el mismo.
 
 - A través de javascript se muestra en el inicio un mensaje si el restaurant esta abierto o cerrado según el horario.  
 
