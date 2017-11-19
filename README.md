@@ -43,6 +43,6 @@ Proyecto de página web con tecnologías web frontend, enfocado en un restaurant
 ![Screenshot Maps](https://github.com/wibastidas/OnePageWebsite/blob/master/imgs/screenshotMobile6.png)
 
 
-[http://bufonrestaurant.com/](http://bufonrestaurant.com/)
-
+[http://bufonrestaurant.com/](http://bufonrestaurant.com/) o 
+https://bufontallergourmet.firebaseapp.com/
 
